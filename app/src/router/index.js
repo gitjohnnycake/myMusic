@@ -7,6 +7,8 @@ import cloudMusic from "views/cloudMusic/CloudMusic.vue";
 import qqMusic from "views/qqMusic/QQMusic.vue";
 import frontPage from "views/frontPage/FrontPage.vue";
 import my from "views/my/My.vue";
+import cloudMusicList from "views/cloudMusicList/CloudMusicList.vue";
+import cloudMusicLyric from "views/cloudMusicLyric/CloudMusicLyric.vue";
 
 const routes = [
   {
@@ -48,32 +50,46 @@ const routes = [
     meta: {
       title: "首页",
     },
-    children: [
-      {
-        path: "/cloudMusic",
-        name: "cloudMusic",
-        component: cloudMusic,
-        meta: {
-          title: "网易云音乐首页",
-        }
-      },
-      {
-        path: "/qqMusic",
-        name: "qqMusic",
-        component: qqMusic,
-        meta: {
-          title: "qq音乐首页",
-        },
-      },
-      {
-        path: "/my",
-        name: "my",
-        component: my,
-        meta: {
-          title: "我的",
-        },
-      }
-    ]
+  },
+  {
+    path: "/cloudMusic",
+    name: "cloudMusic",
+    component: cloudMusic,
+    meta: {
+      title: "网易云音乐首页",
+    },
+  },
+  {
+    path: "/qqMusic",
+    name: "qqMusic",
+    component: qqMusic,
+    meta: {
+      title: "qq音乐首页",
+    },
+  },
+  {
+    path: "/my",
+    name: "my",
+    component: my,
+    meta: {
+      title: "我的",
+    },
+  },
+  {
+    path: "/cloudMusicList",
+    name: "cloudMusicList",
+    component: cloudMusicList,
+    meta: {
+      title: "网易云音乐歌单",
+    },
+  },
+  {
+    path: "/cloudMusicLyric",
+    name: "cloudMusicLyric",
+    component: cloudMusicLyric,
+    meta: {
+      title: "网易云音乐歌词",
+    },
   },
 ];
 

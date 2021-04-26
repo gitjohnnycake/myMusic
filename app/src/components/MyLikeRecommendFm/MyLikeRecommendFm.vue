@@ -2,7 +2,7 @@
   <div id="myLikeRecommendFm">
     <div class="myLikeRecommendFm">
       <div class="myLike">
-        <a href=""><img src="@/assets/image/start.png" alt="" /></a>
+        <a href="cloudMusicList"><img src="@/assets/image/start.png" alt="" /></a>
         <span>我喜欢的音乐 </span>
         <p>200 首</p>
         <p>已下载 100 首</p>

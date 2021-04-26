@@ -1,5 +1,6 @@
 <template>
   <div id="cloudMusic">
+    <Back></Back>
     <Search></Search>
     <Newsong></Newsong>
     <Recommend></Recommend>
@@ -12,6 +13,7 @@ import Search from "components/Search/Search";
 import Recommend from "components/Recommend/Recommend";
 import Newsong from "components/Newsong/Newsong";
 import MyLikeRecommendFm from "components/MyLikeRecommendFm/MyLikeRecommendFm";
+import Back from "components/Back/Back";
 
 export default {
   name: "#cloudMusic",
@@ -21,6 +23,7 @@ export default {
     };
   },
   components: {
+    Back,
     Search,
     Recommend,
     Newsong,
