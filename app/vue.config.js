@@ -70,6 +70,18 @@ module.exports = {
       filename: "my.html",
       title: "我的",
     },
+    cloudMusicList: {
+      entry: "src/views/cloudMusicList/cloudMusicList.js",
+      template: "src/views/cloudMusicList/cloudMusicList.html",
+      filename: "cloudMusicList.html",
+      title: "网易云音乐歌单",
+    },
+    cloudMusicLyric: {
+      entry: "src/views/cloudMusicLyric/cloudMusicLyric.js",
+      template: "src/views/cloudMusicLyric/cloudMusicLyric.html",
+      filename: "cloudMusicLyric.html",
+      title: "网易云音乐歌词",
+    },
   },
   
   chainWebpack: (config) => {

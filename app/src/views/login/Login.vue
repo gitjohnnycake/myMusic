@@ -47,7 +47,7 @@ export default {
   methods: {
     checkLogin() {
       window.location.href = '/frontPage';
-/*       let reg_tel = /^1[3|4|5|7|8][0-9]\d{4,8}$/;
+      let reg_tel = /^1[3|4|5|7|8][0-9]\d{4,8}$/;
       if (this.phone == "") {
         Toast("手机号不能为空");
       } else if (!reg_tel.test(this.phone) || this.phone.length != 11) {
@@ -67,14 +67,15 @@ export default {
               Toast("密码错误");
             } else if (res.data.code == 200) {
               Toast("登陆成功");
+              localStorage.setItem('token', res.token)
               window.location.href = '/cloudMusic';
-            }
+            }a1043eedb006767e640fac4a56632d0b9daa0bad6d76a4d0e7a43616ccbc10a89cb4377b2d7ba249
           })
           .catch((err) => {
             Toast("网络出错啦！");
             console.log(err);
           });
-      } */
+      }
     },
   },
 };

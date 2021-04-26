@@ -1,32 +1,34 @@
 <template>
   <div id="qqMusic">
+    <Back></Back>
     <Search></Search>
     <Newsong></Newsong>
     <Recommend></Recommend>
     <MyLikeRecommendFm></MyLikeRecommendFm>
-    <Navbar></Navbar>
   </div>
 </template>
 
 <script>
 import Search from "components/Search/Search";
 import Recommend from "components/Recommend/Recommend";
-import Navbar from "components/Navbar/Navbar";
 import Newsong from "components/Newsong/Newsong";
 import MyLikeRecommendFm from "components/MyLikeRecommendFm/MyLikeRecommendFm";
+import Back from "components/Back/Back";
 export default {
   name: "#qqMusic",
   data() {
     return {};
   },
   components: {
-    Navbar,
+    Back,
     Search,
     Recommend,
     Newsong,
     MyLikeRecommendFm,
-  },
+  }
 };
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+
+</style>
